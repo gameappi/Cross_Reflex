@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/Canberk-NMI/Desktop/ildogan.apk
+C:/Users/Canberk-NMI/Desktop/crossSpace.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Game.unity
@@ -166,3 +166,4 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+3df5301b0a3474adcea2d17625ab3a3b Assembly-CSharp.dll:.Jetpack
