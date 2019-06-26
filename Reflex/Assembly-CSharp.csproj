@@ -63,8 +63,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\character.cs" />
+    <Compile Include="Assets\Scenes\background.cs" />
+    <Compile Include="Assets\Scenes\cameramove.cs" />
     <Compile Include="Assets\Scenes\transform.cs" />
     <Compile Include="Assets\Space\Jetpack.cs" />
+    <Compile Include="Assets\sprite muzzle flashes\AnimatedTexture.cs" />
     <None Include="Assets\PlanetPackFree\ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/GitRepos/Cross_Reflex/Reflex/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

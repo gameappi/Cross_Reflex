@@ -14,6 +14,7 @@ public class Jetpack : MonoBehaviour
     {
         engineIsOn = false;
         rb = GetComponent<Rigidbody2D>();
+        fire.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,10 +23,12 @@ public class Jetpack : MonoBehaviour
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             engineIsOn = true;
+            fire.SetActive(true);
         } 
         if (Input.touchCount >0 && Input.GetTouch(0).phase== TouchPhase.Ended)
         {
             engineIsOn = false;
+            fire.SetActive(false);
         }
     }
 
