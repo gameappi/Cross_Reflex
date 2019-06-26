@@ -12,6 +12,7 @@ public class Jetpack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         engineIsOn = false;
         rb = GetComponent<Rigidbody2D>();
         fire.SetActive(false);
@@ -43,5 +44,22 @@ public class Jetpack : MonoBehaviour
                 rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Force);
                 break;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name.Equals("Aster")|| collision.name.Equals("Aster1")|| collision.name.Equals("Aster2")|| collision.name.Equals("Aster3")|| collision.name.Equals("Aster4")|| collision.name.Equals("Aster5")|| collision.name.Equals("Aster6")|| collision.name.Equals("Aster7")
+            || collision.name.Equals("Aster8")|| collision.name.Equals("Aster9")|| collision.name.Equals("Aster10"))
+        {
+
+            Application.LoadLevel("Over");
+            Time.timeScale = 0f;
+        }
+    }
+
+    IEnumerator GameOver()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+        Application.LoadLevel("Over");
     }
 }

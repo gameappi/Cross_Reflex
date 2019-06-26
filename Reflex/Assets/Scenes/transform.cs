@@ -26,4 +26,9 @@ public class transform : MonoBehaviour
         Application.Quit();
         //UnityEditor.EditorApplication.isPlaying = false;
     }
+
+    public void Restart()
+    {
+        Application.LoadLevel("Game");
+    }
 }
